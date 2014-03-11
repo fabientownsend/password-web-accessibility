@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>javascript</title>
+	<link rel="stylesheet" href="css/style.css" media="all">
+</head>
+<body class="open-menu">
+		<div class="messageBox">
+			<div class="header">
+				<h2>Title</h2>
+			</div>
+			<form id="myForm">
+				<div class="body">
+					<div>
+						<label>Adresse Email</label>
+						<input type="email" autocomplete="off" placeholder="Entrer votre email">
+					</div>
+					<div>
+						<label>Mot de passe</label>
+						<div id="lblPassWord" class="left">
+							<input id="password" type="password" autocomplete="off" />
+						</div>
+						<div id="lblShow" class="left">
+							<div style="display: inline-block">
+								
+							<input style="inline-block" type="checkbox" name="show-password" role="checkbox" value="1" onclick="handleClick();">
+							</div>
+							<label style="inline-block" for="show-password" title="Show Password">Voir</label>
+						</div>						
+					</div>
+					<div class="message">
+						<p>Succes/fail</p>
+					</div>
+				</div>
+				<div class="footer">
+					<input type="reset" class="pam">
+					<input type="submit" class="pam login">
+				</div>
+			</form>
+		</div>	
+	</div>
+	<script type="text/javascript" src="js/showpassword.js"></script>
+</body>
+</html>
